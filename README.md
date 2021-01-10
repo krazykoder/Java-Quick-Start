@@ -7,9 +7,6 @@ This repository is a collection of advanced vs primitive java differences.
 ![](img\capture.png)
 
 
-
-
-
 ```java
 package com.simple.codes;
 
