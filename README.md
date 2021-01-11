@@ -1,4 +1,8 @@
-"# krazy koder " 
+
+# this repository is updated for Java learning only
+
+
+> "# krazy koder"
 
 ## Repo information 
 
