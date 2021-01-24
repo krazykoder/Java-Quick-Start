@@ -1,6 +1,6 @@
 package com.tow.core;
 
-public class streamsAPI {
+public class streamAPI_Q {
 
 	public void basic() {
 
