@@ -14,7 +14,7 @@ import org.junit.Test;
 
 public class streamAPI {
 
-//	@Test
+	@Test
 	public void basicStreams() {
 
 		List<String> names2 = Arrays.asList("Alex", "Brian", "Charles");
@@ -58,9 +58,13 @@ public class streamAPI {
 		Integer[] numbers = new Integer[] { 1, 2, 4, 5, 7, 8, 6 };
 		int[] pnums = new int[] { 1, 2, 4, 5, 7, 8, 6 };
 
-		Stream<Integer> s = Stream.of(numbers);
+//		List<int> lp = Arrays.asList(pnums);
+		Integer[] s = Stream.of(numbers).toArray(Integer[]::new);
+		System.out.println(s);
+
+//		Stream<Integer> s = Stream.of(numbers);
 //				Stream<Integer> s = Stream.of(pnums); // error cannot convert int[] to Stream <Integers>
-		s.forEach(p -> System.out.println(p));
+//		s.forEach(p -> System.out.println(p));
 
 		// To a list
 		List<Integer> resultList = Stream.of(numbers).filter(x -> x % 3 == 0).collect(Collectors.toList());
@@ -78,10 +82,13 @@ public class streamAPI {
 
 //	@Test
 	public void basic2() {
+		// Sample arrays and lists
+		Integer[] nums = new Integer[] { 1, 2, 4, 5, 7, 8, 6 };
+		int[] pnums = new int[] { 4, 12, 44, 15, 17, 28, 26 };
 		// create a list of integers
 		List<Integer> number = Arrays.asList(2, 3, 4, 5, 7, 6, 8);
 
-		// demonstration of map method
+		// demonstration of map method and print the square of the elements in array
 		List<Integer> square = number.stream().map(x -> x * x).collect(Collectors.toList());
 		System.out.println(square);
 
@@ -143,7 +150,7 @@ public class streamAPI {
 		System.out.println(product);
 	}
 
-	@Test
+//	@Test
 	public void basic4() {
 //
 //		String[] s = "A,B,C:".split(",");
