@@ -440,7 +440,7 @@ A boxed stream is a stream of the wrapper class instances to simulate a stream o
     List<String> strings = Stream.of("how", "to", "do", "in", "java")
                         .collect(Collectors.toList());
 
-    However, the same process doesn’t work on streams of primitives.
+    However, the same process doesnt work on streams of primitives.
     //Compilation Error !!
     IntStream.of(1,2,3,4,5)
         .collect(Collectors.toList());

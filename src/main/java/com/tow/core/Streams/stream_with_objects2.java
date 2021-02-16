@@ -32,7 +32,7 @@ public class stream_with_objects2 {
 
 	private static List<Department> deptList = Arrays.asList(arrayOfDeps);
 
-//	@Test
+	@Test
 	public void streamTest() {
 
 		// First check if the List is okay

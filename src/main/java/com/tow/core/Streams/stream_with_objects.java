@@ -132,6 +132,20 @@ public class stream_with_objects {
 		list.forEach(s -> System.out.println(s.getName()));
 
 	}
+
+	@Test
+	public void myTests() {
+		String hello = "Working with code is TouGH";
+		char[] p = hello.toCharArray();
+		for (char c : p) {
+
+		}
+//		Arrays.stream()
+//				.map(x -> (Character.isUpperCase(x) ? Character.toLowerCase(x) : Character.toUpperCase(x)));
+
+//		Stream.of(hello).map(x -> x.chars().i).forEach(System.out::print);
+	}
+
 }
 
 class TempStudent {

@@ -33,9 +33,10 @@ public class streams_function_tests {
 	 * 
 	 */
 
-	@Test
+//	@Test
 	public void stream_reduce() {
 
+		// simple examples reduce ()
 		IntStream.range(1, 4).forEach(System.out::print);
 		System.out.println();
 		// product of int stream
@@ -51,7 +52,7 @@ public class streams_function_tests {
 		System.out.println(IntStream.range(1, 6).filter(x -> x % 2 == 0).reduce(0, (ans, i) -> ans + i));
 	}
 
-	@Test // https://zetcode.com/java/streamreduce/
+//	@Test // https://zetcode.com/java/streamreduce/
 	public void stream_reduce_advanced_example() {
 		IntStream.range(1, 10).reduce((x, y) -> x + y).ifPresent(s -> System.out.println(s));
 		IntStream.range(1, 10).reduce(Integer::sum).ifPresent(s -> System.out.println(s));
